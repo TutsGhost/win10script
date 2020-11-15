@@ -271,9 +271,13 @@ Function InstallBrave {
  until ($selection -match "y" -or $selection -match "n" -or $selection -match "q")
 	
 }
-#Function Install7Zip {
-#	Show-Choco-Menu -Title "Do you want to install 7-Zip?" -ChocoInstall "7zip"
-#}
+Function Install7Zip {
+	Show-Choco-Menu -Title "Do you want to install 7-Zip?" -ChocoInstall "7zip"
+}
+
+Function Installkeepassxc {
+	Show-Choco-Menu -Title "Do you want to install KeepassXC?" -ChocoInstall "keepassxc"
+}
 
 Function InstallNotepadplusplus {
 	Show-Choco-Menu -Title "Do you want to install Notepad++?" -ChocoInstall "notepadplusplus"
