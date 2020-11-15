@@ -32,7 +32,7 @@ $tweaks = @(
 	"TutsRegistryTweaks",
 	"InstallTutsProgs", #REQUIRED FOR OTHER PROGRAM INSTALLS!
 	"Install7Zip",
-	"InstallKeepassxc"
+	"InstallKeepassxc",
 	"InstallNotepadplusplus",
 	"InstallIrfanview",
 	"InstallVLC",
