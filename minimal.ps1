@@ -259,7 +259,7 @@ Function InstallTutsProgs {
 
 # Function InstallAdobe {
 #	Show-Choco-Menu -Title "Do you want to install Adobe Acrobat Reader?" -ChocoInstall "adobereader"
-}
+#}
 
 Function InstallBrave {
 	do
