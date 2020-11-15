@@ -32,6 +32,7 @@ $tweaks = @(
 	"TutsRegistryTweaks",
 	"InstallTutsProgs", #REQUIRED FOR OTHER PROGRAM INSTALLS!
 	"Install7Zip",
+	"InstallKeepassxc"
 	"InstallNotepadplusplus",
 	"InstallIrfanview",
 	"InstallVLC",
@@ -275,7 +276,7 @@ Function Install7Zip {
 	Show-Choco-Menu -Title "Do you want to install 7-Zip?" -ChocoInstall "7zip"
 }
 
-Function Installkeepassxc {
+Function InstallKeepassxc {
 	Show-Choco-Menu -Title "Do you want to install KeepassXC?" -ChocoInstall "keepassxc"
 }
 
