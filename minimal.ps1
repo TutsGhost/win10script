@@ -32,10 +32,21 @@ $tweaks = @(
 	"TutsRegistryTweaks",
 	"InstallTutsProgs", #REQUIRED FOR OTHER PROGRAM INSTALLS!
 	"Install7Zip",
+	"InstallWinrar",
+	"InstallAutoruns",
 	"InstallKeepassxc",
+	"InstallFirefox",
 	"InstallNotepadplusplus",
+	"InstallSublimetext3",
+	"InstallImageglass",
 	"InstallIrfanview",
+	"InstallMumble",
 	"InstallVLC",
+	"InstallCpu-z",
+	"InstallProcesshacker",
+	"InstallTeracopy",
+	"InstallTotalcommander",
+	"InstallPrime95",
 #	"InstallAdobe",
 	"InstallBrave",
 #	"ChangeDefaultApps",
@@ -276,20 +287,60 @@ Function Install7Zip {
 	Show-Choco-Menu -Title "Do you want to install 7-Zip?" -ChocoInstall "7zip"
 }
 
+Function InstallWinrar {
+	Show-Choco-Menu -Title "Do you want to install Winrar?" -ChocoInstall "winrar"
+}
+
+Function InstallAutoruns {
+	Show-Choco-Menu -Title "Do you want to install Autoruns?" -ChocoInstall "autoruns"
+}
+
 Function InstallKeepassxc {
 	Show-Choco-Menu -Title "Do you want to install KeepassXC?" -ChocoInstall "keepassxc"
+}
+
+Function InstallFirefox {
+	Show-Choco-Menu -Title "Do you want to install Firefox?" -ChocoInstall "firefox"
 }
 
 Function InstallNotepadplusplus {
 	Show-Choco-Menu -Title "Do you want to install Notepad++?" -ChocoInstall "notepadplusplus"
 }
 
-Function InstallVLC {
-	Show-Choco-Menu -Title "Do you want to install VLC?" -ChocoInstall "vlc"
+Function InstallSublimetext3 {
+	Show-Choco-Menu -Title "Do you want to install Sublime 3?" -ChocoInstall "sublimetext3"
+}
+
+Function InstallImageglass {
+	Show-Choco-Menu -Title "Do you want to install Imageglass?" -ChocoInstall "imageglass"
 }
 
 Function InstallIrfanview {
 	Show-Choco-Menu -Title "Do you want to install Irfanview?" -ChocoInstall "irfanview"
+}
+
+Function InstallMumble {
+	Show-Choco-Menu -Title "Do you want to install Mumble?" -ChocoInstall "mumble"
+}
+
+Function InstallVLC {
+	Show-Choco-Menu -Title "Do you want to install VLC?" -ChocoInstall "vlc"
+}
+
+Function InstallCpu-z {
+	Show-Choco-Menu -Title "Do you want to install CPU-Z?" -ChocoInstall "cpu-z"
+}
+
+Function InstallProcesshacker {
+	Show-Choco-Menu -Title "Do you want to install Processhacker?" -ChocoInstall "processhacker"
+}
+
+Function InstallTeracopy {
+	Show-Choco-Menu -Title "Do you want to install Teracopy?" -ChocoInstall "teracopy"
+}
+
+Function InstallPrime95 {
+	Show-Choco-Menu -Title "Do you want to install Prime95?" -ChocoInstall "prime95"
 }
 
 Function ChangeDefaultApps {
