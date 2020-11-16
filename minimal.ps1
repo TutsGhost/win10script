@@ -36,6 +36,7 @@ $tweaks = @(
 	"InstallAutoruns",
 	"InstallKeepassxc",
 	"InstallFirefox",
+	"InstallGeekuninstaller"
 	"InstallNotepadplusplus",
 	"InstallSublimetext3",
 	"InstallImageglass",
@@ -306,6 +307,10 @@ Function InstallKeepassxc {
 
 Function InstallFirefox {
 	Show-Choco-Menu -Title "Do you want to install Firefox?" -ChocoInstall "firefox"
+}
+
+Function InstallGeekuninstaller {
+	Show-Choco-Menu -Title "Do you want to install GeekUninstaller?" -ChocoInstall "geekuninstaller"
 }
 
 Function InstallNotepadplusplus {
