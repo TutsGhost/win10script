@@ -36,6 +36,7 @@ $tweaks = @(
 	"InstallAutoruns",
 	"InstallKeepassxc",
 	"InstallFirefox",
+	"InstallBrave"
 	"InstallGeekuninstaller",
 	"InstallNotepadplusplus",
 	"InstallSublimetext3",
@@ -53,8 +54,8 @@ $tweaks = @(
 	"InstallNextcloud-Client",
 	"InstallThunderbird",
 	"InstallClaws-mail",
+	"InstallSumatrapdf",
 #	"InstallAdobe",
-	"InstallBrave",
 #	"ChangeDefaultApps",
 
 	### Windows Apps
@@ -375,6 +376,10 @@ Function InstallThunderbird {
 
 Function InstallClaws-mail {
 	Show-Choco-Menu -Title "Do you want to install Claws-Mail?" -ChocoInstall "claws-mail"
+}
+
+Function InstallSumatrapdf {
+	Show-Choco-Menu -Title "Do you want to install SumatraPDF?" -ChocoInstall "sumatrapdf"
 }
 
 Function ChangeDefaultApps {
