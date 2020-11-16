@@ -6,7 +6,7 @@
 #
 #    Note: Never run scripts without reading them & understanding what they do!!
 #
-#     > powershell -nop -c "iex(New-Object Net.WebClient).DownloadString('https://git.io/JJ8R4')"
+#     > powershell -nop -c "iex(New-Object Net.WebClient).DownloadString('https://git.io/Jkc16')"
 #
 #	Tech Additions:
 #
