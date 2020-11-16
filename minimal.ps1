@@ -46,7 +46,7 @@ $tweaks = @(
 	"InstallCpu-z",
 	"InstallProcesshacker",
 	"InstallTeracopy",
-	"InstallTotalCommander",
+	"InstallMultiCommander",
 	"InstallPrime95",
 	"InstallObs-studio",
 	"InstallAudacity",
@@ -349,8 +349,8 @@ Function InstallTeracopy {
 	Show-Choco-Menu -Title "Do you want to install Teracopy?" -ChocoInstall "teracopy"
 }
 
-Function InstallTotalCommander{
-	Show-Choco-Menu -Title "Do you want to install Total Commander?" -ChocoInstall "totalcommander"
+Function InstallMultiCommander{
+	Show-Choco-Menu -Title "Do you want to install Multi Commander?" -ChocoInstall "multicommander"
 }
 
 Function InstallPrime95 {
