@@ -47,6 +47,11 @@ $tweaks = @(
 	"InstallTeracopy",
 	"InstallTotalCommander",
 	"InstallPrime95",
+	"InstallObs-studio",
+	"InstallAudacity",
+	"InstallNextcloud-Client",
+	"InstallThunderbird",
+	"InstallClaws-mail",
 #	"InstallAdobe",
 	"InstallBrave",
 #	"ChangeDefaultApps",
@@ -345,6 +350,26 @@ Function InstallTotalCommander{
 
 Function InstallPrime95 {
 	Show-Choco-Menu -Title "Do you want to install Prime95?" -ChocoInstall "prime95"
+}
+
+Function InstallObs-studio {
+	Show-Choco-Menu -Title "Do you want to install OBS Studio?" -ChocoInstall "obs-studio"
+}
+
+Function InstallAudacity {
+	Show-Choco-Menu -Title "Do you want to install Audacity?" -ChocoInstall "Audacity"
+}
+
+Function InstallNextcloud-Client {
+	Show-Choco-Menu -Title "Do you want to install Nextcloud?" -ChocoInstall "nextcloud-client"
+}
+
+Function InstallThunderbird {
+	Show-Choco-Menu -Title "Do you want to install Thunderbird?" -ChocoInstall "thunderbird"
+}
+
+Function InstallClaws-mail {
+	Show-Choco-Menu -Title "Do you want to install Claws-Mail?" -ChocoInstall "claws-mail"
 }
 
 Function ChangeDefaultApps {
