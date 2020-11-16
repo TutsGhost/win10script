@@ -36,7 +36,7 @@ $tweaks = @(
 	"InstallAutoruns",
 	"InstallKeepassxc",
 	"InstallFirefox",
-	"InstallGeekuninstaller"
+	"InstallGeekuninstaller",
 	"InstallNotepadplusplus",
 	"InstallSublimetext3",
 	"InstallImageglass",
