@@ -23,7 +23,7 @@ function Show-Choco-Menu {
     {
     'y' { choco install $ChocoInstall -y }
     'n' { Break }
-	  'm' { Function InstallMenu }
+    'm' { InstallMenu }
     'q' { Exit }
     }
  }
@@ -85,7 +85,7 @@ Function InstallThunderbird {
 	Show-Choco-Menu -Title "Do you want to install Thunderbird?" -ChocoInstall "thunderbird"
 }
 
-		Function InstallMenu }
+	 InstallMenu }
 
 		'2' { Function ConfigurationPrograms
 		
@@ -125,7 +125,7 @@ Function InstallPrime95 {
 	Show-Choco-Menu -Title "Do you want to install Prime95?" -ChocoInstall "prime95"
 }
 		
-		Function InstallMenu }
+	 InstallMenu }
 
 
 		'3' { Function InfoPrograms
@@ -150,7 +150,7 @@ Function InstallCrystalDiskInfo {
 	Show-Choco-Menu -Title "Do you want to install CrystalDiskInfo?" -ChocoInstall "crystaldiskinfo"
 }
 
-		Function InstallMenu }
+	 InstallMenu }
 	     
 		'4' { Function CommunicationPrograms
 		             					  
@@ -178,7 +178,7 @@ Function InstallTeamSpeak {
 	Show-Choco-Menu -Title "Do you want to install Teamspeak?" -ChocoInstall "teamspeak"
 }
 
-		Function InstallMenu }
+	 InstallMenu }
 
 		'5' { Function ImagePrograms 
 		             
@@ -202,7 +202,7 @@ Function InstallFoxitReader {
 	Show-Choco-Menu -Title "Do you want to install FoxitReader?" -ChocoInstall "foxitreader"
 }
 
-		Function InstallMenu }
+	  InstallMenu }
 
 		'6' { Function MediaPrograms 
 		             
@@ -238,7 +238,7 @@ Function InstallShotcut{
 	Show-Choco-Menu -Title "Do you want to install Shotcut?" -ChocoInstall "shotcut"
 }
 
-		Function InstallMenu }
+	 InstallMenu }
 		
 		'7' { Function Screenrecording
 		
@@ -254,6 +254,8 @@ Function InstallCamstudio {
 	Show-Choco-Menu -Title "Do you want to install Camstudio?" -ChocoInstall "camstudio"
 }
 
+	InstallMenu }
+
 		'8' { Function PaintingTools
 		             		
 Function InstallKrita {
@@ -268,7 +270,7 @@ Function InstallGimp {
 	Show-Choco-Menu -Title "Do you want to install Gimp?" -ChocoInstall "gimp"
 }
 
-		Function InstallMenu }
+	 InstallMenu }
 
 		'9' { Function TexteditorPrograms
 		             				  
@@ -284,7 +286,7 @@ Function InstallBrackets {
 	Show-Choco-Menu -Title "Do you want to install Brackets?" -ChocoInstall "brackets"
 }
 			
-		Function InstallMenu }
+	 InstallMenu }
 			
 		'10' { Function PrivacySecurity-Tools
 		                  
@@ -324,7 +326,7 @@ Function InstallWireguard {
 	Show-Choco-Menu -Title "Do you want to install Wireguard?" -ChocoInstall "wireguard"
 }
 
-		Function InstallMenu }
+	 InstallMenu }
 
 		'S' { Exit }
 	   }
