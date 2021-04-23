@@ -31,6 +31,24 @@ function Show-Choco-Menu {
 }
 
 Function InstallTutsProgs {
+    do
+     {
+        Clear-Host
+        Write-Host "================ Chocolatey-Install (requiered!) ================"
+        Write-Host "Y: Press 'Y' to do this."
+        Write-Host "N: Press 'N' to skip this."
+        $selection = Read-Host "Please make a selection"
+        switch ($selection)
+        {
+        'y' { InstallChoco 
+            InstallMenu }
+        'n' { Exit }
+        }
+     }
+ until ($selection -match "y" -or $selection -match "n")
+}
+	
+Function InstallChoco {
 	Write-Output "Installing Chocolatey"
 	Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 	choco install chocolatey-core.extension -y
@@ -405,3 +423,5 @@ Function InstallMenu {
  }
   until ($selection -match "1" -or $selection -match "2" -or $selection -match "3" -or $selection -match "4" -or $selection -match "5" -or $selection -match "6" -or $selection -match "7" -or $selection -match "8" -or $selection -match "9" -or $selection -match "10" -or $selection -match "S")
 }  
+
+InstallTutsProgs
