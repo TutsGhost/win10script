@@ -55,7 +55,7 @@ Function InstallMenu {
 	   $selection = Read-Host "Please make a selection"
 	   switch ($selection)
 	   {
-		'1' { Function RecommendedPrograms 
+		'1' { Function RecommendedPrograms {
 		
 Function InstallFirefox {
 	Show-Choco-Menu -Title "Do you want to install Firefox?" -ChocoInstall "firefox"
@@ -87,7 +87,7 @@ Function InstallThunderbird {
 
 	 InstallMenu }
 
-		'2' { Function ConfigurationPrograms
+		'2' { Function ConfigurationPrograms {
 		
 Function InstallAutoruns {
 	Show-Choco-Menu -Title "Do you want to install Autoruns?" -ChocoInstall "autoruns"
@@ -125,10 +125,10 @@ Function InstallPrime95 {
 	Show-Choco-Menu -Title "Do you want to install Prime95?" -ChocoInstall "prime95"
 }
 		
-	 InstallMenu }
+	 InstallMenu } 
 
 
-		'3' { Function InfoPrograms
+		'3' { Function InfoPrograms {
 		
 Function InstallCpu-z {
 	Show-Choco-Menu -Title "Do you want to install CPU-Z?" -ChocoInstall "cpu-z"
@@ -152,7 +152,7 @@ Function InstallCrystalDiskInfo {
 
 	 InstallMenu }
 	     
-		'4' { Function CommunicationPrograms
+		'4' { Function CommunicationPrograms {
 		             					  
 Function InstallClaws-mail {
 	Show-Choco-Menu -Title "Do you want to install Claws-Mail?" -ChocoInstall "claws-mail"
@@ -180,7 +180,7 @@ Function InstallTeamSpeak {
 
 	 InstallMenu }
 
-		'5' { Function ImagePrograms 
+		'5' { Function ImagePrograms {
 		             
 Function InstallImageglass {
 	Show-Choco-Menu -Title "Do you want to install Imageglass?" -ChocoInstall "imageglass"
@@ -204,7 +204,7 @@ Function InstallFoxitReader {
 
 	  InstallMenu }
 
-		'6' { Function MediaPrograms 
+		'6' { Function MediaPrograms {
 		             
 Function InstallWinrar {
 	Show-Choco-Menu -Title "Do you want to install Winrar?" -ChocoInstall "winrar"
@@ -240,7 +240,7 @@ Function InstallShotcut{
 
 	 InstallMenu }
 		
-		'7' { Function Screenrecording
+		'7' { Function Screenrecording {
 		
 Function InstallObsStudio {
 	Show-Choco-Menu -Title "Do you want to install OBS Studio?" -ChocoInstall "obs-studio"
@@ -256,7 +256,7 @@ Function InstallCamstudio {
 
 	InstallMenu }
 
-		'8' { Function PaintingTools
+		'8' { Function PaintingTools {
 		             		
 Function InstallKrita {
 	Show-Choco-Menu -Title "Do you want to install Krita?" -ChocoInstall "krita"
@@ -272,7 +272,7 @@ Function InstallGimp {
 
 	 InstallMenu }
 
-		'9' { Function TexteditorPrograms
+		'9' { Function TexteditorPrograms {
 		             				  
 Function InstallSublimetext3 {
 	Show-Choco-Menu -Title "Do you want to install Sublime 3?" -ChocoInstall "sublimetext3"
@@ -288,7 +288,7 @@ Function InstallBrackets {
 			
 	 InstallMenu }
 			
-		'10' { Function PrivacySecurity-Tools
+		'10' { Function PrivacySecurity-Tools {
 		                  
 Function InstallNextcloud-Client {
 	Show-Choco-Menu -Title "Do you want to install Nextcloud?" -ChocoInstall "nextcloud-client"
