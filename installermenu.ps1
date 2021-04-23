@@ -36,27 +36,6 @@ Function InstallTutsProgs {
 	choco install chocolatey-core.extension -y
 }
 
-Function InstallMenu {
-        do
-	{
-	   Clear-Host
-	   Write-Host "================ Choose a category to install from ================"
-	   Write-Host "1: Press '1' for Recommended programs"
-	   Write-Host "2: Press '2' for Configuration-/Multitools."
-	   Write-Host "3: Press '3' for Info-Tools"
-	   Write-Host "4: Press '4' for Communicative programs"
-	   Write-Host "5: Press '5' for Imageview/tools"
-	   Write-Host "6: Press '6' for Media programs"
-	   Write-Host "7: Press '7' for Screenrecording programs"
-	   Write-Host "8: Press '8' for Painting-Tools"
-	   Write-Host "9: Press '9' for Texteditor programs"
-	   Write-Host "10: Press '10' for Privacy&Security-Tools"
-	   Write-Host "11: Press 'S' to skip the installation steps."
-	   $selection = Read-Host "Please make a selection"
-	   switch ($selection)
-	   {
-		'1' { Function RecommendedPrograms {
-		
 Function InstallFirefox {
 	Show-Choco-Menu -Title "Do you want to install Firefox?" -ChocoInstall "firefox"
 }
@@ -85,10 +64,6 @@ Function InstallThunderbird {
 	Show-Choco-Menu -Title "Do you want to install Thunderbird?" -ChocoInstall "thunderbird"
 }
 
-	 InstallMenu }
-
-		'2' { Function ConfigurationPrograms {
-		
 Function InstallAutoruns {
 	Show-Choco-Menu -Title "Do you want to install Autoruns?" -ChocoInstall "autoruns"
 }
@@ -124,12 +99,8 @@ Function InstallVirtualBox {
 Function InstallPrime95 {
 	Show-Choco-Menu -Title "Do you want to install Prime95?" -ChocoInstall "prime95"
 }
-		
-	 InstallMenu } 
 
 
-		'3' { Function InfoPrograms {
-		
 Function InstallCpu-z {
 	Show-Choco-Menu -Title "Do you want to install CPU-Z?" -ChocoInstall "cpu-z"
 }
@@ -150,10 +121,7 @@ Function InstallCrystalDiskInfo {
 	Show-Choco-Menu -Title "Do you want to install CrystalDiskInfo?" -ChocoInstall "crystaldiskinfo"
 }
 
-	 InstallMenu }
-	     
-		'4' { Function CommunicationPrograms {
-		             					  
+
 Function InstallClaws-mail {
 	Show-Choco-Menu -Title "Do you want to install Claws-Mail?" -ChocoInstall "claws-mail"
 }
@@ -178,10 +146,7 @@ Function InstallTeamSpeak {
 	Show-Choco-Menu -Title "Do you want to install Teamspeak?" -ChocoInstall "teamspeak"
 }
 
-	 InstallMenu }
 
-		'5' { Function ImagePrograms {
-		             
 Function InstallImageglass {
 	Show-Choco-Menu -Title "Do you want to install Imageglass?" -ChocoInstall "imageglass"
 }
@@ -202,10 +167,7 @@ Function InstallFoxitReader {
 	Show-Choco-Menu -Title "Do you want to install FoxitReader?" -ChocoInstall "foxitreader"
 }
 
-	  InstallMenu }
 
-		'6' { Function MediaPrograms {
-		             
 Function InstallWinrar {
 	Show-Choco-Menu -Title "Do you want to install Winrar?" -ChocoInstall "winrar"
 }
@@ -238,10 +200,8 @@ Function InstallShotcut{
 	Show-Choco-Menu -Title "Do you want to install Shotcut?" -ChocoInstall "shotcut"
 }
 
-	 InstallMenu }
-		
-		'7' { Function Screenrecording {
-		
+
+
 Function InstallObsStudio {
 	Show-Choco-Menu -Title "Do you want to install OBS Studio?" -ChocoInstall "obs-studio"
 }
@@ -254,10 +214,8 @@ Function InstallCamstudio {
 	Show-Choco-Menu -Title "Do you want to install Camstudio?" -ChocoInstall "camstudio"
 }
 
-	InstallMenu }
 
-		'8' { Function PaintingTools {
-		             		
+
 Function InstallKrita {
 	Show-Choco-Menu -Title "Do you want to install Krita?" -ChocoInstall "krita"
 }
@@ -270,10 +228,8 @@ Function InstallGimp {
 	Show-Choco-Menu -Title "Do you want to install Gimp?" -ChocoInstall "gimp"
 }
 
-	 InstallMenu }
 
-		'9' { Function TexteditorPrograms {
-		             				  
+
 Function InstallSublimetext3 {
 	Show-Choco-Menu -Title "Do you want to install Sublime 3?" -ChocoInstall "sublimetext3"
 }
@@ -285,11 +241,9 @@ Function InstallAtom {
 Function InstallBrackets {
 	Show-Choco-Menu -Title "Do you want to install Brackets?" -ChocoInstall "brackets"
 }
-			
-	 InstallMenu }
-			
-		'10' { Function PrivacySecurity-Tools {
-		                  
+
+
+
 Function InstallNextcloud-Client {
 	Show-Choco-Menu -Title "Do you want to install Nextcloud?" -ChocoInstall "nextcloud-client"
 }
@@ -326,7 +280,125 @@ Function InstallWireguard {
 	Show-Choco-Menu -Title "Do you want to install Wireguard?" -ChocoInstall "wireguard"
 }
 
-	 InstallMenu }
+
+Function InstallMenu {
+        do
+	{
+	   Clear-Host
+	   Write-Host "================ Choose a category to install from ================"
+	   Write-Host "1: Press '1' for Recommended programs"
+	   Write-Host "2: Press '2' for Configuration-/Multitools."
+	   Write-Host "3: Press '3' for Info-Tools"
+	   Write-Host "4: Press '4' for Communicative programs"
+	   Write-Host "5: Press '5' for Imageview/tools"
+	   Write-Host "6: Press '6' for Media programs"
+	   Write-Host "7: Press '7' for Screenrecording programs"
+	   Write-Host "8: Press '8' for Painting-Tools"
+	   Write-Host "9: Press '9' for Texteditor programs"
+	   Write-Host "10: Press '10' for Privacy&Security-Tools"
+	   Write-Host "11: Press 'S' to skip the installation steps."
+	   $selection = Read-Host "Please make a selection"
+	   switch ($selection)
+	   {
+		'1' { 
+				InstallFirefox
+				Install7Zip
+				InstallNotepadplusplus
+				InstallGeekuninstaller
+				InstallKeepassxc
+				InstallSumatrapdf
+				InstallThunderbird
+				InstallMenu 
+			}
+
+		'2' { 
+				InstallTutsProgs
+				InstallAutoruns
+				InstallTeracopy
+				InstallMultiCommander
+				InstallTotalCommander
+				InstallChocoCleaner
+				InstallPowerToys
+				InstallUnetbootin
+				InstallVirtualBox
+				InstallPrime95
+				InstallMenu 
+			}
+
+
+		'3' { 
+				InstallCpu-z
+				InstallHWMonitor
+				InstallProcesshacker
+				InstallSysInternals
+				InstallCrystalDiskInfo
+				InstallMenu 
+			}
+	     
+		'4' { 
+				InstallClaws-mail
+				InstallMumble
+				InstallElement
+				InstallJami
+				InstallqTox
+				InstallTeamSpeak
+				InstallMenu 
+			}
+
+		'5' {  
+		        InstallImageglass     
+				InstallIrfanview
+				InstallJpegView
+				InstallFSviewer
+				InstallFoxitReader
+				InstallMenu 
+			}
+
+		'6' { 
+		        InstallWinrar     
+				InstallPeaZip
+				InstallVLC
+				InstallKLite
+				InstallAudacity
+				InstallKdenlive
+				InstallAvidemux
+				InstallShotcut
+				InstallMenu 
+			}
+		
+		'7' { 
+				InstallObsStudio
+				InstallStreamlabsObs
+				InstallCamstudio
+				InstallMenu
+			}
+
+		'8' { 
+				InstallKrita
+				InstallPaintNet
+				InstallGimp
+				InstallMenu
+			}
+
+		'9' { 
+		        InstallSublimetext3     				  
+				InstallAtom
+				InstallBrackets
+				InstallMenu 
+			}
+			
+		'10' { 
+		        InstallNextcloud-Client         
+				InstallSimplewall
+				InstallW10privacy
+				InstallBleachbit
+				InstallClamWin
+				InstallPrivazer
+				InstallVeracrypt
+				InstallWireshark
+				InstallWireguard
+				InstallMenu 
+			}
 
 		'S' { Exit }
 	   }
