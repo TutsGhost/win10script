@@ -152,7 +152,7 @@ Function InstallCrystalDiskInfo {
 
 		Function InstallMenu }
 	     
-		'4' { Function CommunicationPrograms }
+		'4' { Function CommunicationPrograms
 		             					  
 Function InstallClaws-mail {
 	Show-Choco-Menu -Title "Do you want to install Claws-Mail?" -ChocoInstall "claws-mail"
