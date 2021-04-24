@@ -1,3 +1,5 @@
+InstallTutsProgs
+
 function Show-Choco-Menu {
     param(
         [Parameter(Mandatory)]
@@ -40,8 +42,8 @@ Function InstallTutsProgs {
         $selection = Read-Host "Please make a selection"
         switch ($selection)
         {
-        'y' { InstallChoco 
-            InstallMenu }
+        'y' { InstallChoco
+	      InstallMenu }
         'n' { Exit }
         }
      }
@@ -318,7 +320,7 @@ Function InstallMenu {
 	   $selection = Read-Host "Please make a selection"
 	   switch ($selection)
 	   {
-		'1' { 
+		'1' { 		
 				InstallFirefox
 				Install7Zip
 				InstallNotepadplusplus
@@ -330,7 +332,6 @@ Function InstallMenu {
 			}
 
 		'2' { 
-				InstallTutsProgs
 				InstallAutoruns
 				InstallTeracopy
 				InstallMultiCommander
